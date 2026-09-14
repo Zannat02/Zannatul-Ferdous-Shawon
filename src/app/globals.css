@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -24,3 +28,64 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@theme inline {
+  --animate-aurora: aurora 60s linear infinite;
+
+  @keyframes aurora {
+    from {
+      background-position: 50% 50%, 50% 50%;
+    }
+    to {
+      background-position: 350% 50%, 350% 50%;
+    }
+  }
+
+
+  --animate-wave: wave 2.5s ease-in-out infinite;
+@keyframes wave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+}
+
+  --animate-particle-up: particleUp 5s ease-in-out infinite;
+  @keyframes particleUp {
+    0% { transform: translateY(20px) scale(0.5); opacity: 0; }
+    20% { opacity: 0.9; }
+    60% { opacity: 0.8; }
+    100% { transform: translateY(-180px) scale(0.2); opacity: 0; }
+  }
+
+  --animate-hero-particle: heroParticleFloat 9s ease-in-out infinite;
+  @keyframes heroParticleFloat {
+    0% { transform: translateY(20px) scale(0.6); opacity: 0; }
+    20% { opacity: 0.45; }
+    50% { transform: translateY(-25px) translateX(8px) scale(1); opacity: 0.7; }
+    75% { opacity: 0.35; }
+    100% { transform: translateY(-60px) translateX(-6px) scale(0.5); opacity: 0; }
+  }
+
+
+  --animate-shooting-star: shootingStar 3s ease-in-out infinite;
+@keyframes shootingStar {
+  0% { left: -10%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+--animate-globe-spin: globe-spin 10s linear infinite;
+@keyframes globe-spin {
+  from { background-position: 0% 0; }
+  to { background-position: -200% 0; }
+}
+
+
+}
+
+ 
