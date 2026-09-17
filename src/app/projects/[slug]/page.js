@@ -105,16 +105,30 @@ export default async function ProjectDetailsPage({ params }) {
         </div>
 
        
-        <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 mb-14">
+        {/* <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 mb-14">
           <Image
             src={project.thumbnail}
             alt={`${project.title} project screenshot`}
             fill
             sizes="100vw"
-            className="object-cover"
+            className="object-contain"
             priority
           />
-        </div>
+        </div> */}
+
+
+
+           {project.details?.overview && (
+          <section className="mb-14">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
+              {project.details.overview.title}
+            </h2>
+
+            <p className="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-3xl">
+              {project.details.overview.description}
+            </p>
+          </section>
+        )}
 
       
         {project.technologies?.length > 0 && (
@@ -137,17 +151,7 @@ export default async function ProjectDetailsPage({ params }) {
         )}
 
     
-        {project.details?.overview && (
-          <section className="mb-14">
-            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
-              {project.details.overview.title}
-            </h2>
-
-            <p className="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-3xl">
-              {project.details.overview.description}
-            </p>
-          </section>
-        )}
+     
 
       
         {project.details?.features?.length > 0 && (
@@ -244,36 +248,37 @@ export default async function ProjectDetailsPage({ params }) {
         )}
 
       
-        {project.gallery?.length > 0 && (
-          <section>
-            <h2 className="text-xl sm:text-2xl font-bold text-white mb-6">
-              Gallery
-            </h2>
+       {project.gallery?.length > 0 && (
+  <section>
+    <h2 className="text-xl sm:text-2xl font-bold text-white mb-6">
+      Gallery
+    </h2>
 
-            <div className="grid sm:grid-cols-2 gap-6">
-              {project.gallery.map((galleryItem, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col gap-2"
-                >
-                  <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-white/10">
-                    <Image
-                      src={galleryItem.image}
-                      alt={galleryItem.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                      className="object-cover"
-                    />
-                  </div>
+    <div className="grid sm:grid-cols-2 gap-6">
+      {project.gallery.map((galleryItem, i) => (
+        <div
+          key={i}
+          className="flex flex-col gap-2"
+        >
+          <div className="w-full rounded-xl overflow-hidden border border-white/10">
+            <Image
+              src={galleryItem.image}
+              alt={galleryItem.title}
+              width={1200}
+              height={800}
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="w-full h-auto block"
+            />
+          </div>
 
-                  <span className="text-zinc-500 text-xs sm:text-sm text-center">
-                    {galleryItem.title}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
+          <span className="text-zinc-500 text-xs sm:text-sm text-center">
+            {galleryItem.title}
+          </span>
+        </div>
+      ))}
+    </div>
+  </section>
+)}
       </main>
 
         <Footer></Footer>

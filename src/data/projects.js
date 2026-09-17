@@ -200,8 +200,8 @@ export const fullStackProjects = [
     ],
     technologies: ["React", "Vite", "React Router", "Tailwind CSS", "DaisyUI", "TanStack Query", "Firebase", "Node.js", "Express.js", "MongoDB"],
     links: {
-      live: "https://your-live-site.com",
-      github: "https://github.com/your-username/coffee-store-client",
+      live: "https://coffee-store-client-with-auth.vercel.app/",
+      github: "https://github.com/Zannat02/coffee-store-client-with-auth",
     },
     details: {
       overview: {
@@ -239,11 +239,11 @@ export const fullStackProjects = [
       ],
     },
     gallery: [
-      { image: "/projects/espresso-emporium/home.png", title: "Homepage" },
+      { image: "/projects/espresso-emporium/addCoffee.png", title: "Add Coffee" },
       { image: "/projects/espresso-emporium/about.png", title: "About Page" },
       { image: "/projects/espresso-emporium/contact.png", title: "Contact Page" },
       { image: "/projects/espresso-emporium/users.png", title: "Users Page" },
-      { image: "/projects/espresso-emporium/mobile.png", title: "Mobile View" },
+    
     ],
   }
 ];

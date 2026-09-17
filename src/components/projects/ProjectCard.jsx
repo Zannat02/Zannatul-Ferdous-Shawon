@@ -43,16 +43,32 @@ export default function ProjectCard({ project, index, reverse }) {
                     duration: 0.7,
                     ease: "easeOut",
                 }}
-                className={`relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 ${reverse ? "lg:order-2" : "lg:order-1"
+                className={`relative w-full rounded-2xl overflow-hidden border border-white/10 bg-[#111] shadow-2xl ${reverse ? "lg:order-2" : "lg:order-1"
                     }`}
             >
-                <Image
-                    src={project.thumbnail}
-                    alt={`${project.title} - project screenshot`}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
-                />
+                {/* Browser Bar */}
+                <div className="flex h-10 items-center gap-2 border-b border-white/10 bg-[#171717] px-4">
+                    {/* Browser dots */}
+                    <span className="h-3 w-3 rounded-full bg-red-400" />
+                    <span className="h-3 w-3 rounded-full bg-yellow-400" />
+                    <span className="h-3 w-3 rounded-full bg-green-400" />
+
+                    {/* Website URL */}
+                    <div className="ml-3 flex-1 rounded-md bg-white/5 px-3 py-1 text-center text-[11px] text-zinc-400">
+                        {project.links?.live?.replace("https://", "").replace(/\/$/, "")}
+                    </div>
+                </div>
+
+                {/* Website Screenshot */}
+                <div className="relative w-full overflow-hidden">
+                    <Image
+                        src={project.thumbnail}
+                        alt={`${project.title} - project screenshot`}
+                        width={1833}
+                        height={800}
+                        className="block h-auto w-full"
+                    />
+                </div>
             </motion.div>
 
             {/* =========================
@@ -146,12 +162,12 @@ export default function ProjectCard({ project, index, reverse }) {
                         href={`/projects/${project.slug}`}
                         className="inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-white/20 text-white text-xs sm:text-sm font-medium px-3 sm:px-5 py-2 sm:py-2.5 flex-1 lg:flex-none hover:bg-white/10 hover:border-white/40 transition-colors"
                     >
-                       View Details 
+                        View Details
                     </Link>
 
                     {/* GitHub */}
                     <a
-                        href="https://github.com/Zannat02"
+                        href={project.links.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="View GitHub profile"

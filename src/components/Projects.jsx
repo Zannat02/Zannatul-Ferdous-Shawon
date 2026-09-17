@@ -143,17 +143,7 @@ export default function Projects() {
 
 
             {/* GitHub Button */}
-            {/* <div className="relative z-10 mt-16 flex justify-center md:mt-24">
-                <a
-                    href="https://github.com/Zannat02"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-[#8fd8a8]/50 hover:bg-white/10 sm:text-base"
-                >
-                    <FaGithub size={17} />
-                    View More on GitHub
-                </a>
-            </div> */}
+           
         </section>
     );
 }
