@@ -245,6 +245,66 @@ export const fullStackProjects = [
       { image: "/projects/espresso-emporium/users.png", title: "Users Page" },
     
     ],
+  },
+
+  {
+    slug: "notice-board-management-system",
+    title: "Notice Board Management System",
+    category: "Full-Stack Web Application",
+    shortDescription:
+      "A full-stack Notice Board Management System that allows HR/Admin users to create, publish, and manage notices for departments or individual employees, with dynamic status handling and a fully responsive, professional UI.",
+    thumbnail: "/projects/notice-board/thumbnail.png",
+    highlights: [
+      "Centralized HR/Admin dashboard for internal communication",
+      "Published and Draft notice management with dynamic status",
+      "Dedicated Draft Notices page for unpublished notices",
+      "Fully responsive across all devices",
+    ],
+    technologies: ["React", "Vite", "React Router", "Tailwind CSS", "React Icons", "SweetAlert2", "Node.js", "Express.js", "MongoDB"],
+    links: {
+      live: "https://notice-board-client.vercel.app/",
+      github: "https://github.com/Zannat02/Notice-board-client",
+    },
+    details: {
+      overview: {
+        title: "What this project demonstrates",
+        description:
+          "Notice Board Management System is a full-stack internal communication tool built for HR/Admin teams. Admins can create notices with a title, type, target audience (department or individual), and attachments, then publish them instantly or save them as drafts. All notices are tracked from a centralized dashboard, with dynamic status handling separating Published notices from Drafts.",
+      },
+      features: [
+        "Create notices with title, type, target audience, and attachments",
+        "Publish notices instantly or save them as drafts",
+        "Centralized dashboard with active vs draft notice counts",
+        "Dedicated Draft Notices page listing all unpublished notices",
+        "Dynamic notice status handling (Published / Unpublished)",
+        "Sidebar navigation with collapsible mobile drawer",
+        "Responsive table (desktop) and card view (mobile/tablet) for notices",
+        "Toast/alert notifications for create and draft actions",
+        "Fully responsive design",
+      ],
+      role: {
+        title: "My Role",
+        description:
+          "I designed and built the entire application end-to-end — the responsive frontend UI, the notice creation form with multi-select notice types and dynamic status handling, the centralized dashboard and Draft Notices page, reusable components for every section (header, sidebar, notice table/cards, etc.), and the backend REST API for creating and fetching notices connected to MongoDB Atlas.",
+      },
+      challenges: [
+        { title: "Responsive Layout Overhaul", description: "Reworking a desktop-only layout into a fully responsive system — a collapsible sidebar drawer with a hamburger menu, and converting the notices table into a card view on mobile and tablet without losing readability." },
+        { title: "Dropdown Behavior Across Devices", description: "Fixing multi-select and single-select dropdown menus (Target, Designation, Notice Type) that broke or appeared with transparent backgrounds due to stacking-context and overflow issues, and adding outside-click-to-close behavior." },
+        { title: "Dynamic Status Management", description: "Handling Published vs Draft notice states cleanly across the dashboard, notice table, and a separate Draft Notices view, all reading from the same API data." },
+      ],
+      futureImprovements: [
+        "Edit and Delete functionality for existing notices",
+        "Actual file upload/storage for notice attachments (currently only filename is sent)",
+        "Authentication and role-based access for HR/Admin",
+        "Navigation for remaining sidebar menu items (Payroll, Attendance, etc.)",
+      ],
+    },
+    gallery: [
+      { image: "/projects/notice-board/thumbnail.png", title: "Dashboard" },
+      { image: "/projects/notice-board/add-notice.png", title: "Create Notice" },
+      { image: "/projects/notice-board/draft-notices.png", title: "Draft Notices" },
+      
+    ],
   }
 ];
 
