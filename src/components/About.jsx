@@ -7,7 +7,7 @@ const features = [
         icon: FaGraduationCap,
         title: "CSE Foundation",
         description:
-            "BSc in Computer Science and Engineering from University of Asia Pacific (CGPA 3.79/4.00), with Dean's Honor and Vice Chancellor's Honor Awards.",
+            "Grounded in core Computer Science and Engineering concepts, sharpened through contest participation and consistent problem-solving practice.",
     },
     {
         icon: FaLaptopCode,

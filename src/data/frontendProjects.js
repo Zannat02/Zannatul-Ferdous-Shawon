@@ -53,7 +53,7 @@ export const frontendProjects = [
       ],
     },
     gallery: [
-      
+
       { image: "/projects/jobtrack/category.png", title: "Category" },
       { image: "/projects/jobtrack/job-details.png", title: "Job Details" },
       { image: "/projects/jobtrack/about.png", title: "About Page" },
@@ -62,120 +62,146 @@ export const frontendProjects = [
   },
 
   {
-  slug: "dragon-news",
-  title: "Dragon News",
-  category: "Frontend Application",
-  shortDescription:
-    "A responsive news portal with category-based browsing and Firebase authentication.",
-  overlayText: "Stay informed with news that adapts to any screen.",
-  thumbnail: "/projects/dragon-news/thumbnail.png",
-  highlights: [
-    "Category-based news browsing across 10+ categories",
-    "Firebase authentication with email/password and Google sign-in",
-    "Protected news details route requiring login",
-    "Fully responsive layout for mobile, tablet, and desktop",
-  ],
-  technologies: ["React", "React Router", "Firebase", "Tailwind CSS", "DaisyUI"],
-  links: {
-    live: "https://dragon-news-breaking-de231.web.app/category/1",
-    github: "https://github.com/Zannat02/Dragon-news-firebase",
-  },
-  details: {
-    overview: {
-      title: "What this project demonstrates",
-      description:
-        "Dragon News is a digital news platform that delivers organized, category-wise news with secure authentication and a layout that adapts smoothly across mobile, tablet, and desktop screens.",
-    },
-    features: [
-      "Browse news by category with dynamic filtering",
-      "Register, login, and Google sign-in via Firebase",
-      "Protected routes for viewing full news details",
-      "Live scrolling news ticker (marquee)",
-      "Collapsible drawers for categories and widgets on mobile/tablet",
-      "Toast notifications for user feedback",
-    ],
-    role: {
-      title: "My Role",
-      description:
-        "I built the complete frontend, implemented Firebase authentication (email/password and Google), designed the responsive layout system with collapsible drawers, and fixed several structural and logic bugs across the codebase.",
-    },
-    challenges: [
-      {
-        title: "Responsive Multi-Panel Layout",
-        description:
-          "Converting a fixed three-column desktop layout (categories, content, widgets) into a mobile-friendly design using toggleable slide-in drawers.",
-      },
-      {
-        title: "Protected Route Redirects",
-        description:
-          "Ensuring users redirected to login from a protected news details page are sent back to that exact page after successful login.",
-      },
-      {
-        title: "Module Interop Issues",
-        description:
-          "Resolving a CommonJS-to-ESM interop conflict with a marquee library that caused rendering errors under Vite's bundling.",
-      },
-    ],
-    futureImprovements: [
-      "Add GitHub OAuth login",
-      "Add bookmarking/save-for-later functionality",
-      "Add search functionality across news articles",
-      "Add pagination or infinite scroll for category pages",
-    ],
-  },
-  gallery: [
-    { image: "/projects/dragon-news/about.png", title: "About Page" },
-    { image: "/projects/dragon-news/category.png", title: "Category News" },
-    { image: "/projects/dragon-news/news-details.png", title: "News Details" },
-    { image: "/projects/dragon-news/login.png", title: "Login Page" },
-  ],
-},
-
-  {
-    slug: "movie-explorer",
-    title: "Movie Explorer",
+    slug: "dragon-news",
+    title: "Dragon News",
     category: "Frontend Application",
     shortDescription:
-      "A movie browsing app to search titles, view details, and maintain a personal watchlist.",
-    overlayText: "Browse movies and build your own watchlist.",
-    thumbnail: "/projects/movie-explorer/thumbnail.png",
+      "A responsive news portal with category-based browsing and Firebase authentication.",
+    overlayText: "Stay informed with news that adapts to any screen.",
+    thumbnail: "/projects/dragon-news/thumbnail.png",
     highlights: [
-      "Movie search and browsing",
-      "Watchlist saved with JSON data",
-      "Detailed movie info page",
-      "Responsive card-based UI",
+      "Category-based news browsing across 10+ categories",
+      "Firebase authentication with email/password and Google sign-in",
+      "Protected news details route requiring login",
+      "Fully responsive layout for mobile, tablet, and desktop",
     ],
-    technologies: ["React", "Tailwind CSS", "React Router", "JSON"],
+    technologies: ["React", "React Router", "Firebase", "Tailwind CSS", "DaisyUI"],
     links: {
-      live: "https://your-live-site.com",
-      github: "https://github.com/your-username/movie-explorer",
+      live: "https://dragon-news-breaking-de231.web.app/category/1",
+      github: "https://github.com/Zannat02/Dragon-news-firebase",
     },
     details: {
       overview: {
         title: "What this project demonstrates",
         description:
-          "Movie Explorer lets users search and browse movies, view details, and manage a personal watchlist, using mock JSON data on the frontend.",
+          "Dragon News is a digital news platform that delivers organized, category-wise news with secure authentication and a layout that adapts smoothly across mobile, tablet, and desktop screens.",
       },
       features: [
-        "Movie search and filtering",
-        "Watchlist add/remove functionality",
-        "Movie details page",
-        "Responsive layout",
+        "Browse news by category with dynamic filtering",
+        "Register, login, and Google sign-in via Firebase",
+        "Protected routes for viewing full news details",
+        "Live scrolling news ticker (marquee)",
+        "Collapsible drawers for categories and widgets on mobile/tablet",
+        "Toast notifications for user feedback",
       ],
       role: {
         title: "My Role",
         description:
-          "I handled the full frontend build, including routing, search logic, and watchlist state management.",
+          "I built the complete frontend, implemented Firebase authentication (email/password and Google), designed the responsive layout system with collapsible drawers, and fixed several structural and logic bugs across the codebase.",
       },
       challenges: [
-        { title: "Search Performance", description: "Keeping search responsive while filtering a larger mock dataset." },
-        { title: "Watchlist Persistence", description: "Maintaining watchlist state across page navigation." },
+        {
+          title: "Responsive Multi-Panel Layout",
+          description:
+            "Converting a fixed three-column desktop layout (categories, content, widgets) into a mobile-friendly design using toggleable slide-in drawers.",
+        },
+        {
+          title: "Protected Route Redirects",
+          description:
+            "Ensuring users redirected to login from a protected news details page are sent back to that exact page after successful login.",
+        },
+        {
+          title: "Module Interop Issues",
+          description:
+            "Resolving a CommonJS-to-ESM interop conflict with a marquee library that caused rendering errors under Vite's bundling.",
+        },
       ],
-      futureImprovements: ["Integrate a real movie API", "Add user ratings", "Add genre-based recommendations"],
+      futureImprovements: [
+        "Add GitHub OAuth login",
+        "Add bookmarking/save-for-later functionality",
+        "Add search functionality across news articles",
+        "Add pagination or infinite scroll for category pages",
+      ],
     },
     gallery: [
-      { image: "/projects/movie-explorer/home.png", title: "Homepage" },
-      { image: "/projects/movie-explorer/details.png", title: "Movie Details" },
+      { image: "/projects/dragon-news/about.png", title: "About Page" },
+      { image: "/projects/dragon-news/category.png", title: "Category News" },
+      { image: "/projects/dragon-news/news-details.png", title: "News Details" },
+      { image: "/projects/dragon-news/login.png", title: "Login Page" },
     ],
   },
+
+  {
+    slug: "freshbasket",
+    title: "FreshBasket",
+    category: "E-commerce Application",
+    shortDescription:
+      "A responsive grocery e-commerce platform with category-based browsing, cart management, and Firebase authentication.",
+    overlayText: "Fresh groceries, delivered with a smooth shopping experience.",
+    thumbnail: "/projects/freshbasket/thumbnail.png",
+    highlights: [
+      "112+ products organized across 6 categories and 20+ subcategories",
+      "Global cart system with localStorage persistence and live cart badge",
+      "Firebase authentication with protected account and address management",
+      "Firestore-backed address book with add/edit/delete and default address",
+      "Fully responsive layout for mobile, tablet, and desktop",
+    ],
+    technologies: ["React", "React Router", "Firebase", "Tailwind CSS", "DaisyUI"],
+    links: {
+      live: "https://fresh-basket-dusky.vercel.app/",
+      github: "https://github.com/Zannat02/FreshBasket",
+    },
+    details: {
+      overview: {
+        title: "What this project demonstrates",
+        description:
+          "FreshBasket is a grocery e-commerce web app that lets users browse products by category, manage a persistent shopping cart, and maintain a personal account with a saved address book, all within a fully responsive interface.",
+      },
+      features: [
+        "Category and subcategory browsing with a dynamic dropdown navbar",
+        "Auto-rotating hero slider with animated text transitions",
+        "Catalog page with filtering, sorting, and pagination",
+        "Cart with quantity controls, order summary, and toast notifications",
+        "Register, login, and logout via Firebase Authentication",
+        "Protected My Account and Addresses pages with Firestore CRUD",
+        "Collapsible mobile/tablet navigation with an accordion category menu",
+      ],
+      role: {
+        title: "My Role",
+        description:
+          "I built the complete frontend, designed the responsive navigation and product browsing system, implemented Firebase authentication and Firestore-backed address management, and structured the cart system using React Context with localStorage persistence.",
+      },
+      challenges: [
+        {
+          title: "Smooth Scroll-Based Navbar Transition",
+          description:
+            "Animating the navbar from a multi-row layout (announcement bar, search, categories) into a single collapsed row on scroll without a jarring layout jump, solved using CSS grid-template-rows transitions.",
+        },
+        {
+          title: "Category-to-Product Data Matching",
+          description:
+            "Reconciling human-readable category names in the product data with URL-safe slugs used in routing, solved with a shared slug utility used by both the navbar and the shop pages.",
+        },
+        {
+          title: "Cross-Device Theming Inconsistency",
+          description:
+            "Text and backgrounds appeared correct on desktop but broke on mobile/tablet due to DaisyUI auto-switching to a dark theme based on system preference, fixed by locking DaisyUI to a single light theme.",
+        },
+      ],
+      futureImprovements: [
+        "Add a Product Details page with a full description and related products",
+        "Add a Recharts-based price breakdown chart on the Cart page",
+        "Add a checkout flow with address selection and order placement",
+        "Add order history backed by a Firestore orders collection",
+      ],
+    },
+    gallery: [
+      { image: "/projects/freshbasket/products.png", title: "All Products Page" },
+      { image: "/projects/freshbasket/catalog.png", title: "Catalog Page" },
+      { image: "/projects/freshbasket/cart.png", title: "Cart Page" },
+      { image: "/projects/freshbasket/account.png", title: "My Account & Addresses" },
+    ],
+}
+
+ ,
 ];

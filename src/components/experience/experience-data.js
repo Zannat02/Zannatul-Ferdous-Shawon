@@ -30,7 +30,7 @@ export const workExperience = [
     role: "Frontend Developer",
     company: "UNIAD (via Digital Lord)",
     period: "August 2026 – Present",
-    status: "Just Started",
+    status:"Ongoing",
     description:
       "Building the frontend for UNIAD, a study-abroad consultancy platform — currently setting up the core structure and component architecture using React, Tailwind CSS, and JavaScript before moving into full page development.",
     

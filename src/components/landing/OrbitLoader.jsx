@@ -10,7 +10,8 @@ export default function OrbitLoader() {
   const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
   useEffect(() => {
-    const DURATION = 4200; // মোট কতক্ষণ ধরে 0 থেকে 100% যাবে (মিলিসেকেন্ড)
+     router.prefetch("/home");
+    const DURATION = 4200;
     const start = performance.now();
     let rafId;
 
@@ -101,9 +102,7 @@ export default function OrbitLoader() {
         </div>
       </div>
 
-      {/* <p className="text-sm text-zinc-500 tracking-wide">
-        {pct < 100 ? "প্রোফাইল প্রস্তুত হচ্ছে…" : "প্রস্তুত ✓ নিয়ে যাওয়া হচ্ছে…"}
-      </p> */}
+    
     </div>
   );
 }
