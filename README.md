@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Zannatul Ferdous Shawon — Portfolio
 
-## Getting Started
+My personal portfolio website, built with Next.js — showcasing my projects, skills, experience, and a way to get in touch.
 
-First, run the development server:
+🔗 **Live site:** [zannatul-ferdous-shawon.vercel.app](https://zannatul-ferdous-shawon.vercel.app)
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **UI Library:** React
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Icons:** react-icons
+- **Email (Contact Form):** Resend
+- **Deployment:** Vercel
+
+---
+
+## Key Features
+
+- **Animated landing page** — an Aurora-style glowing background with a loading ring that transitions into the main site
+- **Scroll-spy navigation** — the navbar highlights the current section as you scroll
+- **Fully responsive design** — optimized for mobile, tablet, and desktop
+- **Dynamic project detail pages** — each project has its own page built from a single reusable template (`/projects/[slug]`)
+- **Functional contact form** — sends real emails directly to my inbox using the Resend API
+- **SEO optimized** — includes sitemap, robots.txt, and proper metadata
+
+---
+
+## Sections
+
+- **Hero** — introduction and quick links to resume, GitHub, and LinkedIn
+- **About** — background, journey, and core strengths
+- **Skills** — categorized into Frontend, Backend, and Development Tools
+- **Experience** — education timeline and professional work history
+- **Projects** — full-stack and frontend projects, each with a detailed case-study page
+- **Contact** — a working contact form plus direct email, phone, and location info
+
+---
+
+## Running Locally
 
 ```bash
+git clone https://github.com/Zannat02/my-portfolio.git
+cd my-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Note:** The contact form requires a `.env.local` file with a valid `RESEND_API_KEY` and `CONTACT_RECEIVER_EMAIL` to send emails.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email:** [shawon4166@gmail.com](mailto:shawon4166@gmail.com)
+- **LinkedIn:** [linkedin.com/in/zannatul-ferdous-297259215](https://www.linkedin.com/in/zannatul-ferdous-297259215/)
+- **GitHub:** [github.com/Zannat02](https://github.com/Zannat02)
