@@ -2,7 +2,7 @@ export const frontendProjects = [
   {
     slug: "jobtrack",
     title: "JobTrack – A Smart Job Hunting Platform",
-    category: "Full Stack Application",
+    category: "Frontend Application",
     shortDescription:
       "A modern job portal where users can explore job opportunities across multiple companies, filter jobs by category, search jobs, and view detailed job descriptions with a complete Firebase authentication system.",
     overlayText: "Search, explore, and apply — all in one place.",

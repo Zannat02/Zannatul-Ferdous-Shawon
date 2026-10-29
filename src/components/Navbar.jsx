@@ -121,7 +121,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-4">
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/zannatul-ferdous-297259215/"
+            href="https://www.linkedin.com/in/zannatul-shawon/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"

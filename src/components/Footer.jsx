@@ -37,7 +37,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/zannatul-ferdous-297259215/"
+              href="https://www.linkedin.com/in/zannatul-shawon/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#8fd8a8] transition-colors text-sm"

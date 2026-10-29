@@ -128,7 +128,7 @@ export default function Hero() {
                         </a>
 
                         <a
-                            href="https://www.linkedin.com/in/zannatul-ferdous-297259215/"
+                            href="https://www.linkedin.com/in/zannatul-shawon/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn Profile"
